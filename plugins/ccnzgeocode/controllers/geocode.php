@@ -29,7 +29,8 @@ class Geocode_Controller extends Controller
                     ));
             exit;
         }
-        $address_url = rawurlencode($address);
+        // Append nz to search string to ensure New Zealand results
+        $address_url = rawurlencode($address . ' nz');
         $url = "http://maps.googleapis.com/maps/api/geocode/json?address=".$address_url."&sensor=false";
         //Adding bounds that make the geocoder prefer results that are in those bounds
         $url .= "&bounds=-48.123079,164.619141|-39.250405,175.957031";

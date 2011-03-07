@@ -2309,3 +2309,8 @@ div.graph-holder, div.slider-holder {
 #threesteps form a:hover {
     background-color:#555;
 }
+
+.hidden {
+    position: absolute;
+    left: -99999px;	
+}
