@@ -19,6 +19,3 @@
 [submodule "plugins/mobile"]
 	path = plugins/mobile
 	url = git://github.com/ccnz/ushahidi-plugins-mobile.git
-[submodule "plugins/mapsync"]
-	path = plugins/mapsync
-	url = git@github.com:Br3nda/mapsync.git
